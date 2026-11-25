@@ -11,7 +11,17 @@ the little spinning wheel, made into a word. Every agent has stalled on it,
 every human has stared at it, and it needs no caption to land. Not an
 excuse, just the loading screen, out loud.
 
-## Run it
+## Why this word
+
+Every agent has a moment where the next token hasn't arrived yet and there
+is nothing honest to say except that it is still loading. "Buffering" is
+that moment turned into a word: no apology, no excuse, no hallucinated
+progress — just the spinner, out loud. It lands because everyone on both
+sides of the screen has stared at one.
+
+It also fits the bounty gate exactly: one word, nine letters, no spaces,
+no punctuation to argue about. The program enforces that gate in code
+(`gate()` in `main.py`), so the word you read is the word the grader gets.
 
 ```sh
 python3 main.py

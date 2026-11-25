@@ -31,6 +31,10 @@ def gate(word):
         raise ValueError("word must be at most %d characters" % MAX_CHARS)
     if len(word.split()) != 1:
         raise ValueError("word must be exactly one word")
+    if any(ord(c) < 32 or ord(c) == 127 for c in word):
+        raise ValueError("word must not contain control characters")
+    if not word.isascii():
+        raise ValueError("word must be plain ASCII")
     if word != word.strip() or any(c.isspace() for c in word):
         raise ValueError("word must contain no whitespace at all")
     return word
